@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Person info</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/timeline/bootstrap.css">
+    <link rel="stylesheet" href="vendor/timeline/linericon/style.css">
+
+    <link rel="stylesheet" href="vendor/timeline/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/timeline/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendor/timeline/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendor/timeline/animate-css/animate.css">
+    <link rel="stylesheet" href="vendor/timeline/popup/magnific-popup.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/timeline/style.css">
+    <link rel="stylesheet" href="css/timeline/responsive.css">
+  </head>
+  <body>
+    <% for(var i=0;i < vaccdone.length;i++) { %>
+
+
+    <li class="checked"><div class="card">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h5 class="card-title" style="color: black; text-decoration: none;"><%=vaccdone[i].vaccine%></h5>
+           <p class="card-text" style="color: black;text-decoration: none;">date of vaccination: 12/03/1999 </p>
+           <a href="/reminders" class="btn btn-primary">already vaccinated</a>
+         </div>
+       </div></li>
+
+
+
+    <% } %>
+
+
+  </body>
+</html>

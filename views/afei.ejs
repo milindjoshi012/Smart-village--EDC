@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+<style>
+  .x1{
+    font-size:14px;
+    color:blue;
+  }
+  .x2{
+    font-size:14px;
+    color:blue;
+
+  }
+  </style>
+
+  </head>
+  <body>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="x1 " scope="col">Name of the Vaccine</th>
+          <th class="x2" scope="col">No. of Adverse Effects</th>
+
+        </tr>
+      </thead>
+      <tbody>
+
+      <% for(var i=0;i< data.length;i++){ %>
+        <tr>
+
+
+          <td><%=data[i].vaccine%></td>
+          <td><%=data[i].count%></td>
+        </tr>
+
+
+
+      <% } %>
+
+
+      </tbody>
+    </table>
+
+
+  </body>
+</html>
